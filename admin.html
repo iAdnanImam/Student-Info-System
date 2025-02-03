@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+        }
+        form {
+            padding: 50px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            border: 2px solid black;
+            transform: scale(1.2);
+        }
+        label {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input[type="text"],[type="password"] {
+            width: 80%;
+            padding: 8px;
+            margin: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <form method="get" action="admin.php">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required /><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required /><br>
+            <tr>
+                <td class="center" align="center" colspan="2" valign="center"><button type="submit" style="margin: 10px; padding: 5px; border-radius: 5px; background-color: rgb(40, 197, 40)">OK</button><button type="reset" style="margin: 10px; padding: 5px; border-radius: 5px;background-color: rgb(40, 197, 40);">Cancel</button></td>
+            </tr>
+        </form>
+    </div>
+</body>
+</html>
